@@ -1,0 +1,136 @@
+:root {
+  --deepseek-primary: #1a73e8;
+  --deepseek-secondary: #34a853;
+  --deepseek-background: #f8f9fa;
+  --deepseek-text: #202124;
+  --deepseek-card-bg: #ffffff;
+}
+
+body {
+  padding-top: 70px;
+  background-color: var(--deepseek-background);
+  color: var(--deepseek-text);
+}
+
+.navbar {
+  background-color: var(--deepseek-card-bg) !important;
+  border-bottom: 2px solid var(--deepseek-primary);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand, .nav-link {
+  color: var(--deepseek-text) !important;
+}
+
+.nav-link:hover {
+  color: var(--deepseek-primary) !important;
+}
+
+.cms-main-content {
+  min-height: calc(100vh - 130px);
+  padding: 20px;
+}
+
+.footer {
+  background-color: var(--deepseek-card-bg);
+  color: var(--deepseek-text);
+  padding: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.cms-card {
+  transition: transform 0.3s;
+  height: 100%;
+  background-color: var(--deepseek-card-bg);
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.cms-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.comparison-table th {
+  background-color: var(--deepseek-primary);
+  color: white;
+}
+
+.cms-logo {
+  max-height: 100px;
+  object-fit: contain;
+}
+
+.btn-primary {
+  background-color: var(--deepseek-primary);
+  border-color: var(--deepseek-primary);
+}
+
+.btn-primary:hover {
+  background-color: #1557b0;
+  border-color: #1557b0;
+}
+
+.quick-links {
+  background-color: var(--deepseek-card-bg);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  font-size: 0.9rem; /* Уменьшаем размер текста */
+}
+
+.quick-links h5 {
+  margin-bottom: 15px;
+  color: var(--deepseek-primary);
+  font-size: 1rem; /* Уменьшаем размер заголовка */
+}
+
+.quick-links .list-group-item {
+  border: none;
+  padding: 8px 0; /* Уменьшаем отступы */
+}
+
+.quick-links .list-group-item a {
+  color: var(--deepseek-text);
+  text-decoration: none;
+}
+
+.quick-links .list-group-item a:hover {
+  color: var(--deepseek-primary);
+}
+
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--deepseek-primary);
+  transition: width 0.3s;
+}
+
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--deepseek-primary);
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}

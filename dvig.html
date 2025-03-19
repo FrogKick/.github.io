@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Виды «движков» сайта - Руководство</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<!-- Шапка -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+    <div class="container">
+        <!-- Логотип и кнопка для мобильных устройств -->
+        <a class="navbar-brand" href="index.html">CMS Guide</a>
+        <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Переключить навигацию">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Основное меню -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cms-types.html">Виды CMS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="statistics.html">Статистика</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dvig.html">Виды «движков»</a>
+                </li>
+                <li class="nav-item">
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Основной контент -->
+<main class="cms-main-content">
+    <div class="container">
+        <div class="row">
+            <!-- Основной текст -->
+            <div class="col-md-8">
+                <!-- Заголовок -->
+                <div class="text-center mb-5">
+                    <h1 class="display-4">Виды «движков» сайта</h1>
+                    <p class="lead">Обзор различных типов систем управления контентом</p>
+                </div>
+
+                <!-- Раздел "Коробочные CMS" -->
+                <section id="boxed-cms" class="mb-5">
+                    <h2 class="mb-4">1. Коробочные CMS</h2>
+                    <p class="fs-5">
+                        Коробочные CMS — это уже готовая рабочая система, на которой можно создать сайт любой тематики — хоть для детского сада, хоть для нефтеперерабатывающего завода. В «коробке» уже есть необходимый функционал, например шаблоны оформления страниц сайта или варианты структуры блога.
+                    </p>
+                    <p class="fs-5">
+                        Коробочные CMS могут быть платными, как например 1C-Битрикс, или бесплатными, как WordPress или Drupal. Выбранную CMS нужно скачать с официального сайта разработчика и установить. Подключение CMS — не всегда простая работа. Нужно выбрать хостинг, который подходит под задачи компании и выбранную CMS, через админ-панель хостинга создать новую базу данных, залить на хостинг файлы движка и при установке CMS соединить её с созданной базой данных.
+                    </p>
+
+                    <img
+                    src="https://avatars.mds.yandex.net/get-lpc/1635340/055d9f2e-f7db-4bd0-9bf4-3607d5d46666/width_1280_q70"
+                    alt="Sunflower"
+                    width="100%"
+                    />
+
+                    <h3 class="mt-4">✅ Плюсы</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">В «коробке» уже заложены основные модули и шаблоны, которые нужны для создания сайта, их можно быстро развернуть и настроить.</li>
+                        <li class="list-group-item">Легко поменять внешний вид сайта, структуру, контент.</li>
+                        <li class="list-group-item">Легко расширить функциональность сайта, например добавить функцию бронирования или онлайн-записи.</li>
+                        <li class="list-group-item">Можно интегрировать сторонние решения, например, вставить модуль «МойСклад» или платёжный шлюз.</li>
+                        <li class="list-group-item">Разработчик постоянно модернизирует CMS и следит за безопасностью, служба поддержки поможет разобраться и настроить сайт.</li>
+                        <li class="list-group-item">Есть большие сообщества разработчиков по отдельным видам CMS, где всегда можно спросить совета.</li>
+                    </ul>
+                    <h3 class="mt-4">❌ Минусы</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Если нужно реализовать сложное решение, например интернет-магазин с десятками тысяч артикулов, то проще нанять специалиста, который настроит и запустит сайт, чем разбираться самостоятельно в вёрстке или настройках безопасности.</li>
+                        <li class="list-group-item">Готовые CMS рассчитаны на массмаркет — то есть, сайт можно «допилить» под задачи компании любой сферы бизнеса. Из-за этого в коде много мусора, который может вызывать проблемы. Например, сайт может не выдержать огромный наплыв трафика.</li>
+                    </ul>
+                    <p class="fs-5 mt-4">
+                        <strong>Популярные коробочные CMS:</strong> WordPress, Magento, Joomla, OpenCart, 1C-Битрикс, Drupal, MODx.
+                    </p>
+                </section>
+
+                <!-- Раздел "Конструкторы" -->
+                <section id="constructors" class="mb-5">
+                    <h2 class="mb-4">2. Конструкторы</h2>
+                    <p class="fs-5">
+                        Конструктор — это интернет-платформа для создания сайтов, на которой всё уже продумано и готово: дизайн, размеры блоков и их расположение. Ничего не нужно скачивать и устанавливать. Сайт можно собрать прямо на платформе за час, как лего: выбрать подходящий шаблон из десятков предложенных, двигать блоки, как нравится. Например, на Wix больше 800 шаблонов для разных сфер бизнеса.
+                    </p>
+                    <p class="fs-5">
+                        Конструкторы условно-бесплатные: можно сделать простой сайт с минимальным функционалом, но за каждое улучшение надо будет платить. Например, создать визитку, где указаны только данные и контакты специалиста — бесплатно, а для лендинга с формой обратной связи или оплатой надо будет покупать дополнительные модули.
+                    </p>
+
+                    <img
+                    src="https://avatars.mds.yandex.net/get-lpc/1635340/bc4cd6b2-ed87-4b1e-93e0-543b41d9b7d4/width_1280_q70"
+                    alt="Sunflower"
+                    width="100%"
+                    />
+
+                    <h3 class="mt-4">✅ Плюсы</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Можно быстро создать и запустить сайт с минимальным функционалом, а после — его совершенствовать.</li>
+                        <li class="list-group-item">Сайт будет работать и без оплаты, правда, не со всеми функциями.</li>
+                        <li class="list-group-item">Огромное количество шаблонов для всех сфер бизнеса.</li>
+                        <li class="list-group-item">Дополнительные решения, которые можно внедрить за пару минут. Например, подключить чат-бота или встроить онлайн-оплату.</li>
+                    </ul>
+                    <h3 class="mt-4">❌ Минусы</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Зависимость от компании-разработчика. Если нужно будет перенести сайт на отдельный хостинг, придётся заплатить.</li>
+                        <li class="list-group-item">Пользователь скован рамками шаблонов. Создать сайт полностью по своему замыслу не получится — только по представленным моделям.</li>
+                    </ul>
+                    <p class="fs-5 mt-4">
+                        <strong>Популярные конструкторы:</strong> Tilda, Wix, Readymag.
+                    </p>
+                </section>
+
+                <!-- Раздел "Самописные CMS" -->
+                <section id="custom-cms" class="mb-5">
+                    <h2 class="mb-4">3. Самописные CMS</h2>
+                    <p class="fs-5">
+                        Самописные CMS разрабатываются специально для задач клиента. Программисты с нуля пишут код для создания страниц, добавления видео, фото и любых функций. Например, если на сайте понадобится выделять галочкой выбранные товары и отправлять их в корзину, веб-разработчики пишут для этого новый код, и так каждый раз.
+                    </p>
+                    <p class="fs-5">
+                        Обычно самописные CMS для сайтов разрабатывают крупные компании, если нужно, чтобы сайт выполнял какую-то нестандартную задачу. Например, Ozon работает на собственной CMS, потому что типовые решения для компании такого уровня не подходят.
+                    </p>
+
+
+                    <h3 class="mt-4">✅ Плюсы</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Можно реализовать любые идеи.</li>
+                        <li class="list-group-item">Сайт быстро работает, так как проект разбит на несколько сервисов, независимых друг от друга.</li>
+                        <li class="list-group-item">Можно быстро внедрять любые новые технологии.</li>
+                        <li class="list-group-item">Легко дорабатывать, так как разработчики сами писали код и знают, что, где и как нужно изменить.</li>
+                    </ul>
+                    <h3 class="mt-4">❌ Минусы</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Для разработки самописной CMS нужно много времени и большой бюджет.</li>
+                        <li class="list-group-item">Для любого нового решения код нужно будет писать с нуля — плагинов для самописных CMS не существует.</li>
+                        <li class="list-group-item">Админ-панель будет неудобной поначалу.</li>
+                    </ul>
+                </section>
+
+                <!-- Раздел "Headless CMS" -->
+                <section id="headless-cms" class="mb-5">
+                    <h2 class="mb-4">4. Headless CMS</h2>
+                    <p class="fs-5">
+                        Headless CMS, или «безголовые» CMS, работают с разными интерфейсами и устройствами и синхронизируют данные между веб-ресурсами. Система находится на серверах разработчика, её можно арендовать, лицензию покупать не нужно.
+                    </p>
+
+
+                    <h3 class="mt-4">✅ Плюсы</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Омниканальность — можно подключать сколько угодно интерфейсов.</li>
+                        <li class="list-group-item">Писать код можно на любом языке программирования и в любой среде разработки.</li>
+                        <li class="list-group-item">Легко внедрить в уже работающий сайт, не нужно нанимать новых специалистов.</li>
+                        <li class="list-group-item">Легко масштабировать.</li>
+                        <li class="list-group-item">Безопасность — крупные провайдеры обеспечивают защиту системы и справляются с DDoS-атаками.</li>
+                    </ul>
+                    <h3 class="mt-4">❌ Минусы</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Для работы с Headless CMS нужно настроить обмен данными по API. Это сложная работа, поэтому вряд ли получится сделать это самостоятельно — придётся нанимать специалистов.</li>
+                        <li class="list-group-item">Нужно покупать выделенный сервер — это дороже, чем использовать обычный общий хостинг.</li>
+                    </ul>
+                </section>
+
+                <!-- Кнопка возврата -->
+                <div class="back-to-top">
+                    <a href="#top" class="btn btn-secondary">Назад</a>
+                </div>
+            </div>
+
+            <!-- Быстрые ссылки по странице -->
+            <div class="col-md-4">
+                <div class="quick-links">
+                    <h5>Быстрые ссылки</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="#boxed-cms" class="text-decoration-none">Коробочные CMS</a></li>
+                        <li class="list-group-item"><a href="#constructors" class="text-decoration-none">Конструкторы</a></li>
+                        <li class="list-group-item"><a href="#custom-cms" class="text-decoration-none">Самописные CMS</a></li>
+                        <li class="list-group-item"><a href="#headless-cms" class="text-decoration-none">Headless CMS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Подвал -->
+<footer class="footer mt-auto">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <h5>О нас</h5>
+                <p>Эксперты в области веб-технологий с 2010 года</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5>Контакты</h5>
+                <p>Email: info@cms-guide.ru<br>Телефон: +7 (495) 123-45-67</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Соцсети</h5>
+                <a href="#" class="text-decoration-none me-2">VK</a>
+                <a href="#" class="text-decoration-none me-2">Telegram</a>
+            </div>
+        </div>
+        <div class="border-top mt-3 pt-3">
+            © 2023 CMS Guide. Все материалы защищены
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
