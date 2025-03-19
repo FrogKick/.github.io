@@ -135,20 +135,25 @@ body {
   width: 100%;
 }
 
-/* Стили для таблицы */
-.table {
-    font-size: 0.9rem; /* Уменьшаем размер шрифта */
+/* Уменьшаем размер шрифта и отступы */
+.table-sm th,
+.table-sm td {
+    padding: 0.5rem; /* Уменьшаем отступы */
+    font-size: 0.85rem; /* Уменьшаем размер шрифта */
 }
 
-.table thead th {
-    background-color: var(--deepseek-primary);
-    color: white;
+/* Уменьшаем ширину столбцов */
+.table-sm th,
+.table-sm td {
+    white-space: nowrap; /* Запрещаем перенос текста */
 }
 
-.table tbody tr:hover {
-    background-color: rgba(0, 0, 0, 0.05); /* Легкая подсветка при наведении */
+/* Уменьшаем заголовок таблицы */
+.table-sm thead th {
+    font-size: 0.9rem; /* Уменьшаем размер шрифта заголовка */
 }
 
-.table tbody tr:nth-child(odd) {
-    background-color: #f8f9fa; /* Чередование цветов строк */
+/* Уменьшаем отступы в ячейках */
+.table-sm tbody tr td {
+    padding: 0.4rem; /* Уменьшаем отступы внутри ячеек */
 }
