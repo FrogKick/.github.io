@@ -134,3 +134,21 @@ body {
 .nav-link:hover::after {
   width: 100%;
 }
+
+/* Стили для таблицы */
+.table {
+    font-size: 0.9rem; /* Уменьшаем размер шрифта */
+}
+
+.table thead th {
+    background-color: var(--deepseek-primary);
+    color: white;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.05); /* Легкая подсветка при наведении */
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #f8f9fa; /* Чередование цветов строк */
+}
